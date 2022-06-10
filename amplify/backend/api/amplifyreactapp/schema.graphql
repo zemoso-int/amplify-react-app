@@ -1,0 +1,8 @@
+type Post @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  imageUrl: AWSURL
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+ 
